@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "Person",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "zone": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "image": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "studies": {
+      "via": "person",
+      "collection": "study"
+    },
+    "experiences": {
+      "collection": "experience",
+      "via": "person"
+    },
+    "personID": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

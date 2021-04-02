@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "studies",
+  "info": {
+    "name": "Study",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "startYear": {
+      "type": "integer"
+    },
+    "endYear": {
+      "type": "integer"
+    },
+    "school": {
+      "model": "school"
+    },
+    "person": {
+      "model": "person",
+      "via": "studies"
+    },
+    "diplome": {
+      "type": "string"
+    },
+    "domaine": {
+      "type": "string"
+    }
+  }
+}

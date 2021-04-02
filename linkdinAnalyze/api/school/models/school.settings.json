@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schools",
+  "info": {
+    "name": "School",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "float"
+    },
+    "lng": {
+      "type": "float"
+    },
+    "schoolID": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

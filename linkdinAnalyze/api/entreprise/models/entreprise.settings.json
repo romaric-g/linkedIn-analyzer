@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entreprises",
+  "info": {
+    "name": "Entreprise",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "employeesCount": {
+      "type": "integer"
+    },
+    "sector": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "entrepriseID": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "sizeLabel": {
+      "type": "string"
+    }
+  }
+}
